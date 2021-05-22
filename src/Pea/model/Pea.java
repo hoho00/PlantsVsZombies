@@ -1,5 +1,6 @@
 package Pea.model;
 
+import lane.model.Lane;
 import window.GamePanel;
 import zombie.model.Zombie;
 
@@ -12,18 +13,19 @@ public class Pea {
 
     private int posX;
     protected GamePanel gp;
+    private Lane lanes;
     private int myLane;
 
-    public Pea(GamePanel parent, int lane, int startX) {
-        this.gp = parent;
-        this.myLane = lane;
+    public Pea(int lane, int startX) {
+        myLane = lane;
         posX = startX;
+        lanes = lanes.getInstance();
     }
 
     public void advance() {
         Rectangle pRect = new Rectangle(posX, 130 + myLane * 120, 28, 28);
-        for (int i = 0; i < gp.getLaneZombies().get(myLane).size(); i++) {
-            Zombie z = gp.getLaneZombies().get(myLane).get(i);
+        for (int i = 0; i < lanes.getLaneZombies().get(myLane).size(); i++) {
+            Zombie z = lanes.getLaneZombies().get(myLane).get(i);
             Rectangle zRect = new Rectangle(z.getPosX(), 109 + myLane * 120, 400, 120);
             if (pRect.intersects(zRect)) {
                 z.setHealth(z.getHealth() - 300);
@@ -31,11 +33,11 @@ public class Pea {
                 if (z.getHealth() < 0) {
                     System.out.println("ZOMBIE DIED");
 
-                    gp.getLaneZombies().get(myLane).remove(i);
+                    lanes.getLaneZombies().get(myLane).remove(i);
                     GamePanel.setProgress(10);
                     exit = true;
                 }
-                gp.getLaneZombies().get(myLane).remove(this);
+                lanes.getLaneZombies().get(myLane).remove(this);
                 if (exit) break;
             }
         }

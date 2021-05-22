@@ -21,8 +21,8 @@ public class Sun extends JPanel implements MouseListener {
 
     private int destruct = 200;
 
-    public Sun(GamePanel parent, int startX, int startY, int endY) {
-        this.gp = parent;
+    public Sun(int startX, int startY, int endY) {
+        gp = gp.getInstance();
         this.endY = endY;
         setSize(80, 80);
         setOpaque(false);

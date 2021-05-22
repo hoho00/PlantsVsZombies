@@ -1,5 +1,6 @@
 package plant.model;
 
+import lane.model.Lane;
 import window.GamePanel;
 
 /**
@@ -18,12 +19,14 @@ public abstract class Plant {
     private int yPosition;
 
     private GamePanel gp;
+    protected Lane lanes;
 
 
-    public Plant(GamePanel parent, int xPosition, int yPosition) {
+    public Plant(int xPosition, int yPosition) {
         this.xPosition = xPosition;
         this.yPosition = yPosition;
-        gp = parent;
+        gp = gp.getInstance();
+        lanes = lanes.getInstance();
     }
 
     public void stop() {

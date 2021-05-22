@@ -16,10 +16,11 @@ public class GameWindow extends JFrame {
         Peashooter,
         FreezePeashooter
     }
-
+    private GamePanel gp;
     //PlantType activePlantingBrush = PlantType.None;
 
     public GameWindow() {
+        //gp = new GamePanel();
         setSize(1012, 785);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(null);
@@ -28,7 +29,7 @@ public class GameWindow extends JFrame {
         sun.setLocation(37, 80);
         sun.setSize(60, 20);
 
-        GamePanel gp = new GamePanel(sun);
+        gp = gp.getInstance();
         gp.setLocation(0, 0);
         getLayeredPane().add(gp, new Integer(0));
 
@@ -54,7 +55,7 @@ public class GameWindow extends JFrame {
         getLayeredPane().add(freezepeashooter, new Integer(3));
 
 
-        getLayeredPane().add(sun, new Integer(2));
+
         setResizable(false);
         setVisible(true);
     }

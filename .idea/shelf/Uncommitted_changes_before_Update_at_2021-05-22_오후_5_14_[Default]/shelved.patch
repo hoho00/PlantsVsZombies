@@ -1,0 +1,238 @@
+Index: src/Plant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/**\r\n * Created by Armin on 6/25/2016.\r\n */\r\npublic abstract class Plant {\r\n\r\n    private int health = 200;\r\n\r\n    /**\r\n     * 변수 이름 구체적으로\r\n     * x -> xPosition, y-> yPosition\r\n     * gp -> gamePanel\r\n     */\r\n    private int xPosition;\r\n    private int yPosition;\r\n\r\n    private GamePanel gp;\r\n\r\n\r\n    public Plant(GamePanel parent, int xPosition, int yPosition) {\r\n        this.xPosition = xPosition;\r\n        this.yPosition = yPosition;\r\n        gp = parent;\r\n    }\r\n\r\n    public void stop() {\r\n    }\r\n\r\n    public int getHealth() {\r\n        return health;\r\n    }\r\n\r\n    public void setHealth(int health) {\r\n        this.health = health;\r\n    }\r\n\r\n    public int getxPosition() {\r\n        return xPosition;\r\n    }\r\n\r\n    public void setxPosition(int xPosition) {\r\n        this.xPosition = xPosition;\r\n    }\r\n\r\n    public int getyPosition() {\r\n        return yPosition;\r\n    }\r\n\r\n    public void setyPosition(int yPosition) {\r\n        this.yPosition = yPosition;\r\n    }\r\n\r\n    public GamePanel getGp() {\r\n        return gp;\r\n    }\r\n\r\n    public void setGp(GamePanel gp) {\r\n        this.gp = gp;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Plant.java	(revision a89d6ba920a4482a1f2f8a9a051d3c5d525f46c3)
++++ src/Plant.java	(date 1621598181601)
+@@ -1,6 +1,16 @@
+ /**
+  * Created by Armin on 6/25/2016.
+  */
++
++/**
++ * Plant 와 그 자식 클래스의 refactoring
++ * 일단 지금 plant를 abstract class 로 선언하고 자식 plant들을 만드는 형태로 구현 되어 있다.
++ * 하지만, 지금 plant의 공격하는 동작에서 bad smell이 난다.
++ * 첫번째로, Plant에서 GamePanel field는 필요 없다.
++ * 두번째는, plant를 추가로 구현할 시 수행하는 코드가 중복될 가능성이 있다. 그래서 Plant 와 그 자식 클래스에 Strategy pattern을 적용 시키려고 한다.
++ * 어떻게? moving strategy class를 만들어서 관리한다.
++ *
++ */
+ public abstract class Plant {
+ 
+     private int health = 200;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7dc5d397-09b3-4108-83f3-9a4e2501e054\" name=\"Default\" comment=\"Reformatted code\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/LEVEL_CONTENT.vbhv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Collider.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/ConeHeadZombie.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/FreezePea.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/FreezePeashooter.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/GamePanel$PlantActionListener.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/GamePanel.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/GameWindow$PlantType.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/GameWindow.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/LevelData.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Menu$1.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Menu.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/NormalZombie.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Pea.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Peashooter.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Plant.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/PlantButton.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/PlantCard.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Sun.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Sunflower.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/Zombie.class\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/cards/card_cherrybomb.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/cards/card_freezepeashooter.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/cards/card_peashooter.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/cards/card_sunflower.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/cards/card_wallnut.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/freezepea.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/mainBG.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/menu.JPG\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/pea.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/plants/freezepeashooter.gif\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/plants/peashooter.gif\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/plants/sunflower.gif\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/sun.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/zombies/zombie1.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/production/jPvZ/images/zombies/zombie2.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Collider.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Collider.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/FreezePeashooter.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/FreezePeashooter.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Peashooter.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Peashooter.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Plant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Plant.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CreatePatchCommitExecutor\">\r\n    <option name=\"PATCH_PATH\" value=\"\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1smj5l5cC2i4vPGISUZlDakY0yC\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp\" value=\"1545396204491\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../../../../../bitcoin_spring_workspace\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n  </component>\r\n  <component name=\"PsiViewer.ProjectComponent\">\r\n    <option name=\"HIGHLIGHT\" value=\"false\" />\r\n    <option name=\"FILTER_WHITESPACE\" value=\"false\" />\r\n    <option name=\"SHOW_PROPERTIES\" value=\"true\" />\r\n    <option name=\"SPLIT_DIVIDER_POSITION\" value=\"300\" />\r\n    <option name=\"AUTOSCROLL_TO_SOURCE\" value=\"false\" />\r\n    <option name=\"AUTOSCROLL_FROM_SOURCE\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Armin\\IdeaProjects\\jPvZ\\resources\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"AndroidRunConfigurationType\" factoryName=\"Android Application\">\r\n      <module name=\"\" />\r\n      <option name=\"DEPLOY\" value=\"true\" />\r\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\r\n      <option name=\"PM_INSTALL_OPTIONS\" value=\"\" />\r\n      <option name=\"ACTIVITY_EXTRA_FLAGS\" value=\"\" />\r\n      <option name=\"MODE\" value=\"default_activity\" />\r\n      <option name=\"TARGET_SELECTION_MODE\" value=\"SHOW_DIALOG\" />\r\n      <option name=\"PREFERRED_AVD\" value=\"\" />\r\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\r\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"true\" />\r\n      <option name=\"SKIP_NOOP_APK_INSTALLATIONS\" value=\"true\" />\r\n      <option name=\"FORCE_STOP_RUNNING_APP\" value=\"true\" />\r\n      <option name=\"USE_LAST_SELECTED_DEVICE\" value=\"false\" />\r\n      <option name=\"PREFERRED_AVD\" value=\"\" />\r\n      <option name=\"DEEP_LINK\" value=\"\" />\r\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\r\n      <method />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"AndroidTestRunConfigurationType\" factoryName=\"Android Tests\">\r\n      <module name=\"\" />\r\n      <option name=\"TESTING_TYPE\" value=\"0\" />\r\n      <option name=\"INSTRUMENTATION_RUNNER_CLASS\" value=\"\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"CLASS_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"EXTRA_OPTIONS\" value=\"\" />\r\n      <option name=\"TARGET_SELECTION_MODE\" value=\"SHOW_DIALOG\" />\r\n      <option name=\"PREFERRED_AVD\" value=\"\" />\r\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\r\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"true\" />\r\n      <option name=\"SKIP_NOOP_APK_INSTALLATIONS\" value=\"true\" />\r\n      <option name=\"FORCE_STOP_RUNNING_APP\" value=\"true\" />\r\n      <option name=\"USE_LAST_SELECTED_DEVICE\" value=\"false\" />\r\n      <option name=\"PREFERRED_AVD\" value=\"\" />\r\n      <method />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"Applet\">\r\n      <option name=\"POLICY_FILE\" value=\"$APPLICATION_HOME_DIR$/bin/appletviewer.policy\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"FlashRunConfigurationType\">\r\n      <option name=\"BCName\" value=\"\" />\r\n      <option name=\"IOSSimulatorSdkPath\" value=\"\" />\r\n      <option name=\"adlOptions\" value=\"\" />\r\n      <option name=\"airProgramParameters\" value=\"\" />\r\n      <option name=\"appDescriptorForEmulator\" value=\"Android\" />\r\n      <option name=\"clearAppDataOnEachLaunch\" value=\"true\" />\r\n      <option name=\"debugTransport\" value=\"USB\" />\r\n      <option name=\"debuggerSdkRaw\" value=\"BC SDK\" />\r\n      <option name=\"emulator\" value=\"NexusOne\" />\r\n      <option name=\"emulatorAdlOptions\" value=\"\" />\r\n      <option name=\"fastPackaging\" value=\"true\" />\r\n      <option name=\"fullScreenHeight\" value=\"0\" />\r\n      <option name=\"fullScreenWidth\" value=\"0\" />\r\n      <option name=\"launchUrl\" value=\"false\" />\r\n      <option name=\"launcherParameters\">\r\n        <LauncherParameters>\r\n          <option name=\"browser\" value=\"a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8\" />\r\n          <option name=\"launcherType\" value=\"OSDefault\" />\r\n          <option name=\"newPlayerInstance\" value=\"false\" />\r\n          <option name=\"playerPath\" value=\"FlashPlayerDebugger.exe\" />\r\n        </LauncherParameters>\r\n      </option>\r\n      <option name=\"mobileRunTarget\" value=\"Emulator\" />\r\n      <option name=\"moduleName\" value=\"\" />\r\n      <option name=\"overriddenMainClass\" value=\"\" />\r\n      <option name=\"overriddenOutputFileName\" value=\"\" />\r\n      <option name=\"overrideMainClass\" value=\"false\" />\r\n      <option name=\"runTrusted\" value=\"true\" />\r\n      <option name=\"screenDpi\" value=\"0\" />\r\n      <option name=\"screenHeight\" value=\"0\" />\r\n      <option name=\"screenWidth\" value=\"0\" />\r\n      <option name=\"url\" value=\"http://\" />\r\n      <option name=\"usbDebugPort\" value=\"7936\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"FlexUnitRunConfigurationType\" appDescriptorForEmulator=\"Android\" class_name=\"\" emulatorAdlOptions=\"\" method_name=\"\" package_name=\"\" scope=\"Class\">\r\n      <option name=\"BCName\" value=\"\" />\r\n      <option name=\"launcherParameters\">\r\n        <LauncherParameters>\r\n          <option name=\"browser\" value=\"a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8\" />\r\n          <option name=\"launcherType\" value=\"OSDefault\" />\r\n          <option name=\"newPlayerInstance\" value=\"false\" />\r\n          <option name=\"playerPath\" value=\"FlashPlayerDebugger.exe\" />\r\n        </LauncherParameters>\r\n      </option>\r\n      <option name=\"moduleName\" value=\"\" />\r\n      <option name=\"trusted\" value=\"true\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JUnitTestDiscovery\" factoryName=\"JUnit Test Discovery\" changeList=\"All\">\r\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\r\n      <module name=\"\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"PACKAGE_NAME\" />\r\n      <option name=\"MAIN_CLASS_NAME\" />\r\n      <option name=\"METHOD_NAME\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PARAMETERS\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <option name=\"ENV_VARIABLES\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"singleModule\" />\r\n      </option>\r\n      <envs />\r\n      <patterns />\r\n      <method />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"TestNGTestDiscovery\" factoryName=\"TestNG Test Discovery\" changeList=\"All\">\r\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\r\n      <module name=\"\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"SUITE_NAME\" />\r\n      <option name=\"PACKAGE_NAME\" />\r\n      <option name=\"MAIN_CLASS_NAME\" />\r\n      <option name=\"METHOD_NAME\" />\r\n      <option name=\"GROUP_NAME\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PARAMETERS\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" />\r\n      <option name=\"ANNOTATION_TYPE\" />\r\n      <option name=\"ENV_VARIABLES\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"singleModule\" />\r\n      </option>\r\n      <option name=\"USE_DEFAULT_REPORTERS\" value=\"false\" />\r\n      <option name=\"PROPERTIES_FILE\" />\r\n      <envs />\r\n      <properties />\r\n      <listeners />\r\n      <method />\r\n    </configuration>\r\n    <configuration name=\"GameWindow\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GameWindow\" />\r\n      <module name=\"jPvZ\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"GrailsRunConfigurationType\" factoryName=\"Grails\">\r\n      <setting name=\"vmparams\" value=\"\" />\r\n      <setting name=\"cmdLine\" value=\"run-app\" />\r\n      <setting name=\"passParentEnv\" value=\"true\" />\r\n      <setting name=\"grailsApplicationRoot\" value=\"\" />\r\n      <setting name=\"launchBrowser\" value=\"true\" />\r\n      <setting name=\"launchBrowserUrl\" value=\"\" />\r\n      <setting name=\"depsClasspath\" value=\"false\" />\r\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JUnit\" factoryName=\"JUnit\">\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <option name=\"filePath\" />\r\n      <option name=\"vmParameters\" />\r\n      <option name=\"alternativeJrePath\" />\r\n      <option name=\"programParameters\" />\r\n      <option name=\"passParentEnvs\" value=\"true\" />\r\n      <option name=\"workingDirectory\" />\r\n      <option name=\"isAlternativeJrePathEnabled\" value=\"false\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <module name=\"\" />\r\n      <option name=\"filePath\" />\r\n      <option name=\"vmParameters\" />\r\n      <option name=\"alternativeJrePath\" />\r\n      <option name=\"programParameters\" />\r\n      <option name=\"passParentEnvs\" value=\"true\" />\r\n      <option name=\"workingDirectory\" />\r\n      <option name=\"isAlternativeJrePathEnabled\" value=\"false\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"TestNG\">\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_DIR$\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"#org.jetbrains.idea.devkit.run.PluginConfigurationType\">\r\n      <module name=\"\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" />\r\n      <predefined_log_file enabled=\"true\" id=\"idea.log\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"js.build_tools.gulp\">\r\n      <node-interpreter>project</node-interpreter>\r\n      <node-options />\r\n      <gulpfile />\r\n      <tasks />\r\n      <arguments />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"mocha-javascript-test-runner\">\r\n      <node-interpreter>project</node-interpreter>\r\n      <node-options />\r\n      <working-directory />\r\n      <pass-parent-env>true</pass-parent-env>\r\n      <ui>bdd</ui>\r\n      <extra-mocha-options />\r\n      <test-kind>DIRECTORY</test-kind>\r\n      <test-directory />\r\n      <recursive>false</recursive>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.GameWindow\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7dc5d397-09b3-4108-83f3-9a4e2501e054\" name=\"Default\" comment=\"\" />\r\n      <created>1466841968784</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1466841968784</updated>\r\n      <workItem from=\"1466841970099\" duration=\"1347000\" />\r\n      <workItem from=\"1466844449650\" duration=\"13860000\" />\r\n      <workItem from=\"1467040047708\" duration=\"8446000\" />\r\n      <workItem from=\"1467090458940\" duration=\"5639000\" />\r\n      <workItem from=\"1467103595414\" duration=\"109000\" />\r\n      <workItem from=\"1467103732419\" duration=\"4987000\" />\r\n      <workItem from=\"1467193268889\" duration=\"1030000\" />\r\n      <workItem from=\"1467194315273\" duration=\"2386000\" />\r\n      <workItem from=\"1467454660488\" duration=\"128000\" />\r\n      <workItem from=\"1467454945959\" duration=\"6000\" />\r\n      <workItem from=\"1490016712390\" duration=\"91000\" />\r\n      <workItem from=\"1545395201972\" duration=\"1059000\" />\r\n      <workItem from=\"1621484481764\" duration=\"8097000\" />\r\n      <workItem from=\"1621570015634\" duration=\"4195000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Reformatted code\">\r\n      <created>1545395229844</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1545395229844</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.UiProperties\">\r\n    <option name=\"RECENTLY_FILTERED_USER_GROUPS\">\r\n      <collection />\r\n    </option>\r\n    <option name=\"RECENTLY_FILTERED_BRANCH_GROUPS\">\r\n      <collection />\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Reformatted code\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Reformatted code\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"613\" y=\"116\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1621485291731\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state x=\"613\" y=\"116\" key=\"#com.intellij.ide.util.MemberChooser/78.0.1458.864@78.0.1458.864\" timestamp=\"1621485291731\" />\r\n    <state x=\"588\" y=\"321\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1621595067421\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state x=\"588\" y=\"321\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/78.0.1458.864@78.0.1458.864\" timestamp=\"1621595067421\" />\r\n    <state x=\"569\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1621571469314\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state x=\"569\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/78.0.1458.864@78.0.1458.864\" timestamp=\"1621571469314\" />\r\n    <state x=\"588\" y=\"187\" key=\"FileChooserDialogImpl\" timestamp=\"1621581648595\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state x=\"588\" y=\"187\" key=\"FileChooserDialogImpl/78.0.1458.864@78.0.1458.864\" timestamp=\"1621581648595\" />\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1621495569867\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864\" timestamp=\"1621495569867\" />\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.center\" timestamp=\"1621495569867\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864\" timestamp=\"1621495569867\" />\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.left\" timestamp=\"1621495569867\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864\" timestamp=\"1621495569867\" />\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.right\" timestamp=\"1621495569867\">\r\n      <screen x=\"78\" y=\"0\" width=\"1458\" height=\"864\" />\r\n    </state>\r\n    <state width=\"1415\" height=\"221\" key=\"GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864\" timestamp=\"1621495569867\" />\r\n  </component>\r\n  <component name=\"antWorkspaceConfiguration\">\r\n    <option name=\"IS_AUTOSCROLL_TO_SOURCE\" value=\"false\" />\r\n    <option name=\"FILTER_TARGETS\" value=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision a89d6ba920a4482a1f2f8a9a051d3c5d525f46c3)
++++ .idea/workspace.xml	(date 1621671114673)
+@@ -10,57 +10,22 @@
+         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
++    </expand>
++    <select>
+       <path>
+         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:myOrigin" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
+-    </expand>
+-    <select />
++    </select>
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="Reformatted code">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/LEVEL_CONTENT.vbhv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Collider.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/ConeHeadZombie.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/FreezePea.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/FreezePeashooter.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/GamePanel$PlantActionListener.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/GamePanel.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/GameWindow$PlantType.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/GameWindow.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/LevelData.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Menu$1.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Menu.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/NormalZombie.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Peashooter.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Plant.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/PlantButton.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/PlantCard.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Sun.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Sunflower.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/Zombie.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/cards/card_cherrybomb.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/cards/card_freezepeashooter.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/cards/card_peashooter.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/cards/card_sunflower.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/cards/card_wallnut.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/freezepea.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/mainBG.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/menu.JPG" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/pea.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/plants/freezepeashooter.gif" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/plants/peashooter.gif" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/plants/sunflower.gif" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/sun.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/zombies/zombie1.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/out/production/jPvZ/images/zombies/zombie2.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collider.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/FreezePeashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FreezePeashooter.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Collider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Collider.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/FreezePeashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/FreezePeashooter.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Peashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Peashooter.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Plant.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Peashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Peashooter.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
+     </list>
+@@ -81,6 +46,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="ProjectId" id="1smj5l5cC2i4vPGISUZlDakY0yC" />
+   <component name="ProjectViewState">
+@@ -92,7 +58,7 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545396204491" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../bitcoin_spring_workspace" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Assignment/StrategyPattern/StrategyPattern/SoftwareSystemDesign_Assignment_2" />
+     <property name="nodejs_package_manager_path" value="npm" />
+     <property name="project.structure.last.edited" value="Project" />
+     <property name="project.structure.proportion" value="0.0" />
+@@ -268,6 +234,17 @@
+     </configuration>
+     <configuration default="true" type="Application" factoryName="Application">
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
++      <option name="arquillianRunConfiguration">
++        <value>
++          <option name="containerStateName" value="" />
++        </value>
++      </option>
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -393,7 +370,8 @@
+       <workItem from="1490016712390" duration="91000" />
+       <workItem from="1545395201972" duration="1059000" />
+       <workItem from="1621484481764" duration="8097000" />
+-      <workItem from="1621570015634" duration="4195000" />
++      <workItem from="1621570015634" duration="12627000" />
++      <workItem from="1621664358855" duration="6685000" />
+     </task>
+     <task id="LOCAL-00001" summary="Reformatted code">
+       <created>1545395229844</created>
+@@ -445,26 +423,38 @@
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+     <state x="569" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/78.0.1458.864@78.0.1458.864" timestamp="1621571469314" />
+-    <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1621581648595">
++    <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1621598221513">
++      <screen x="78" y="0" width="1458" height="864" />
++    </state>
++    <state x="588" y="187" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1621598221513" />
++    <state width="1415" height="221" key="GridCell.Tab.0.bottom" timestamp="1621670683748">
++      <screen x="78" y="0" width="1458" height="864" />
++    </state>
++    <state width="1415" height="221" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1621670683748" />
++    <state width="1415" height="221" key="GridCell.Tab.0.center" timestamp="1621670683747">
++      <screen x="78" y="0" width="1458" height="864" />
++    </state>
++    <state width="1415" height="221" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1621670683747" />
++    <state width="1415" height="221" key="GridCell.Tab.0.left" timestamp="1621670683747">
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+-    <state x="588" y="187" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1621581648595" />
+-    <state width="1415" height="221" key="GridCell.Tab.0.bottom" timestamp="1621495569867">
++    <state width="1415" height="221" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1621670683747" />
++    <state width="1415" height="221" key="GridCell.Tab.0.right" timestamp="1621670683747">
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+-    <state width="1415" height="221" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1621495569867" />
+-    <state width="1415" height="221" key="GridCell.Tab.0.center" timestamp="1621495569867">
++    <state width="1415" height="221" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1621670683747" />
++    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1621666761846">
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+-    <state width="1415" height="221" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1621495569867" />
+-    <state width="1415" height="221" key="GridCell.Tab.0.left" timestamp="1621495569867">
++    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1621666761846" />
++    <state x="620" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621670965810">
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+-    <state width="1415" height="221" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1621495569867" />
+-    <state width="1415" height="221" key="GridCell.Tab.0.right" timestamp="1621495569867">
++    <state x="620" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/78.0.1458.864@78.0.1458.864" timestamp="1621670965810" />
++    <state x="414" y="130" width="672" height="678" key="search.everywhere.popup" timestamp="1621670550228">
+       <screen x="78" y="0" width="1458" height="864" />
+     </state>
+-    <state width="1415" height="221" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1621495569867" />
++    <state x="414" y="130" width="672" height="678" key="search.everywhere.popup/78.0.1458.864@78.0.1458.864" timestamp="1621670550228" />
+   </component>
+   <component name="antWorkspaceConfiguration">
+     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+Index: src/Peashooter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\nimport java.awt.event.ActionEvent;\r\n\r\n/**\r\n * Created by Armin on 6/25/2016.\r\n */\r\npublic class Peashooter extends Plant {\r\n\r\n    public Timer shootTimer;\r\n\r\n\r\n    public Peashooter(GamePanel parent, int x, int y) {\r\n        super(parent, x, y);\r\n        shootTimer = new Timer(2000, (ActionEvent e) -> {\r\n            //System.out.println(\"SHOOT\");\r\n            if (getGp().getLaneZombies().get(y).size() > 0) {\r\n                getGp().getLanePeas().get(y).add(new Pea(getGp(), y, 103 + this.getxPosition() * 100));\r\n            }\r\n        });\r\n        shootTimer.start();\r\n    }\r\n\r\n    @Override\r\n    public void stop() {\r\n        shootTimer.stop();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Peashooter.java	(revision a89d6ba920a4482a1f2f8a9a051d3c5d525f46c3)
++++ src/Peashooter.java	(date 1621597091850)
+@@ -4,15 +4,32 @@
+ /**
+  * Created by Armin on 6/25/2016.
+  */
++
+ public class Peashooter extends Plant {
+ 
++    /**
++     * private으로 고쳐야 한다.
++     * public Timer -> private Timer
++     * 그리고 밖에서 호출해서 쓰는 클래스는 없어서 getter setter는 안만들어 줘도 된다.
++     */
+     public Timer shootTimer;
+ 
+-
++    /**
++     * Peashooter constructor
++     * param으로 Gamepanel을 받았음에도 불구하고 extends Plant에 있는 getGP() 메소드를 사용하였다.
++     * 결국 param GamePanel은 필요가 없다.
++     * 지워도 될 것 같다. 하지만, constructor를 고치면 연관된 클래스의 호출 함수도 바꿔야 한다.
++     * 연관된 class : GamePanel
++     */
+     public Peashooter(GamePanel parent, int x, int y) {
+         super(parent, x, y);
+         shootTimer = new Timer(2000, (ActionEvent e) -> {
+             //System.out.println("SHOOT");
++            /**
++             * 이 if 문은 Peashooter의 외부로 만들어져야 한다.
++             * if 문 내의 조건식을 알아보기 힘들다.
++             * 클래스를 직접 만드는 것 보다 moving abstract에서 호출 시키자.
++             */
+             if (getGp().getLaneZombies().get(y).size() > 0) {
+                 getGp().getLanePeas().get(y).add(new Pea(getGp(), y, 103 + this.getxPosition() * 100));
+             }
