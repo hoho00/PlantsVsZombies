@@ -1,3 +1,9 @@
+package zombie.model;
+
+import window.Collider;
+import window.GamePanel;
+import window.GameWindow;
+
 import javax.swing.*;
 
 /**
@@ -39,7 +45,7 @@ public class Zombie {
                     posX -= 1;
                 }
             } else {
-                collided.assignedPlant.setHealth(collided.assignedPlant.getHealth() - 10);
+                collided.assignedPlant.setHealth(collided.assignedPlant.getHealth()     - 10);
                 if (collided.assignedPlant.getHealth() < 0) {
                     collided.removePlant();
                 }
@@ -62,10 +68,10 @@ public class Zombie {
     public static Zombie getZombie(String type, GamePanel parent, int lane) {
         Zombie z = new Zombie(parent, lane);
         switch (type) {
-            case "NormalZombie":
+            case "zombie.model.NormalZombie":
                 z = new NormalZombie(parent, lane);
                 break;
-            case "ConeHeadZombie":
+            case "zombie.model.ConeHeadZombie":
                 z = new ConeHeadZombie(parent, lane);
                 break;
         }

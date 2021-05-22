@@ -1,3 +1,8 @@
+package plant.model;
+
+import sun.model.Sun;
+import window.GamePanel;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 

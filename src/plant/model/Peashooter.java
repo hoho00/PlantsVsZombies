@@ -1,20 +1,25 @@
+package plant.model;
+
+import Pea.model.Pea;
+import window.GamePanel;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 /**
  * Created by Armin on 6/25/2016.
  */
-public class FreezePeashooter extends Plant {
+public class Peashooter extends Plant {
 
-    private Timer shootTimer;
+    public Timer shootTimer;
 
 
-    public FreezePeashooter(GamePanel parent, int x, int y) {
+    public Peashooter(GamePanel parent, int x, int y) {
         super(parent, x, y);
         shootTimer = new Timer(2000, (ActionEvent e) -> {
             //System.out.println("SHOOT");
             if (getGp().getLaneZombies().get(y).size() > 0) {
-                getGp().getLanePeas().get(y).add(new FreezePea(getGp(), y, 103 + this.getxPosition() * 100));
+                getGp().getLanePeas().get(y).add(new Pea(getGp(), y, 103 + this.getxPosition() * 100));
             }
         });
         shootTimer.start();

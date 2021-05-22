@@ -1,3 +1,5 @@
+package window;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,14 +15,14 @@ import java.awt.*;
 public class Menu extends JPanel {
 
     /**
-     * Creates new form Menu
+     * Creates new form window.Menu
      */
     private Image bgImage;
 
     public Menu() {
         initComponents();
         setSize(1012, 785);
-        bgImage = new ImageIcon(this.getClass().getResource("images/menu.jpg")).getImage();
+        bgImage = new ImageIcon(this.getClass().getResource("../images/menu.jpg")).getImage();
 
     }
 
@@ -36,7 +38,6 @@ public class Menu extends JPanel {
 
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 

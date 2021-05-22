@@ -1,3 +1,7 @@
+package plant.model;
+
+import window.GamePanel;
+
 /**
  * Created by Armin on 6/25/2016.
  */
