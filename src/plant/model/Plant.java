@@ -12,24 +12,24 @@ public abstract class Plant {
 
     private int health = 200;
 
-    private int x;
-    private int y;
+    private int xPosition;
+    private int yPosition;
 
-    private GamePanel gp;
+    private GamePanel gamePanel;
     private Lane lane;
 
     private PlantShootingStrategy plantShootingStrategy;
 
 
-    public Plant(int x, int y) {
-        this.x = x;
-        this.y = y;
-        gp = gp.getInstance();
+    public Plant(int xPosition, int yPosition) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        gamePanel = gamePanel.getInstance();
         lane = lane.getInstance();
     }
 
     public void shoot() {
-        plantShootingStrategy.shoot(x, y, lane);
+        plantShootingStrategy.shoot(xPosition, yPosition, lane);
     }
 
 
@@ -58,28 +58,28 @@ public abstract class Plant {
         this.health = health;
     }
 
-    public int getX() {
-        return x;
+    public int getxPosition() {
+        return xPosition;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public void setxPosition(int xPosition) {
+        this.xPosition = xPosition;
     }
 
-    public int getY() {
-        return y;
+    public int getyPosition() {
+        return yPosition;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setyPosition(int yPosition) {
+        this.yPosition = yPosition;
     }
 
-    public GamePanel getGp() {
-        return gp;
+    public GamePanel getGamePanel() {
+        return gamePanel;
     }
 
-    public void setGp(GamePanel gp) {
-        this.gp = gp;
+    public void setGamePanel(GamePanel gamePanel) {
+        this.gamePanel = gamePanel;
     }
 
 }
