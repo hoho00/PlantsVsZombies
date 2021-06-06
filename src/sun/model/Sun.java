@@ -21,11 +21,11 @@ public class Sun {
             move();
         }
         else{
-            destruct();
+            reduceDestructTime();
         }
     }
 
-    private void destruct() {
+    public void reduceDestructTime() {
         setDestructTime(getDestructTime() - 1);
     }
 

@@ -43,4 +43,17 @@ public class SunTest {
         sun.move();
         Assert.assertEquals(14, sun.getYPosition());
     }
+
+    /**
+     * Purpose : Reduce Sun Destruct Time
+     * Input : Sun.reduceDestructTime(), sun's destructTime - 1
+     * Expected :
+     *  199 = sun.getDestructTime()
+     */
+    @Test
+    public void SunReduceDestructTimeTest(){
+        Sun sun = new Sun(10,10,10);
+        sun.reduceDestructTime();
+        Assert.assertEquals(199,sun.getDestructTime());
+    }
 }
