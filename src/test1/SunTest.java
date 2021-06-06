@@ -69,4 +69,19 @@ public class SunTest {
         sun.action();
         Assert.assertEquals(14,sun.getYPosition());
     }
+
+    /**
+     * Purpose :  Sun Action Test When yPosition >= endYPosition
+     * Input : Sun(10,10,10), reduce sun destruct time
+     * Expected :
+     *  10 = sun.getYPosition()
+     *  199 = sun.getDestructTime()
+     */
+    @Test
+    public void SunActionReduceDestructTimeTest(){
+        Sun sun = new Sun(10,10,10);
+        sun.action();
+        Assert.assertEquals(10,sun.getYPosition());
+        Assert.assertEquals(199, sun.getDestructTime());
+    }
 }
