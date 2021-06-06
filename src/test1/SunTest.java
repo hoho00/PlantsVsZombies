@@ -30,4 +30,17 @@ public class SunTest {
         Assert.assertEquals(10,sun.getYPosition());
         Assert.assertEquals(10,sun.getEndYPosition());
     }
+
+    /**
+     * Purpose : Move Sun
+     * Input : Sun.move(), sun's yPosition + 4
+     * Expected :
+     *  14 = sun.getYPosition()
+     */
+    @Test
+    public void SunMoveTest(){
+        Sun sun = new Sun(10,10,20);
+        sun.move();
+        Assert.assertEquals(14, sun.getYPosition());
+    }
 }

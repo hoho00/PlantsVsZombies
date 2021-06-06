@@ -16,14 +16,23 @@ public class Sun {
         setyPosition(startY);
     }
 
-    public void move() {
+    public void action() {
         if (getYPosition() < getEndYPosition()) {
-            setyPosition(getYPosition() + 4);
+            move();
         }
         else{
-            setDestructTime(getDestructTime() - 1);
+            destruct();
         }
     }
+
+    private void destruct() {
+        setDestructTime(getDestructTime() - 1);
+    }
+
+    public void move() {
+        setyPosition(getYPosition() + 4);
+    }
+
     public int getXPosition(){
         return xPosition;
     }
