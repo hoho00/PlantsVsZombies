@@ -1,8 +1,7 @@
 package sun.producer;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
+import sun.view.SunView;
 
 public interface SunProducer {
-    public void createSunView();
+    public SunView createSunView();
 }

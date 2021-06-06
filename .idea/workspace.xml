@@ -26,7 +26,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="Git Ignore Update">
-      <change beforePath="$PROJECT_DIR$/src/test1/SunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test1/SunTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test1/SunFlowerSunProducerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/bin/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/producer/SunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/SunProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +131,7 @@
       <recent name="C:\Users\Armin\IdeaProjects\jPvZ\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SunFlowerSunProducerTest.SunFlowerSunProducerCreateSunViewTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -290,6 +334,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SunFlowerSunProducerTest.SunFlowerSunProducerCreateSunViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jPvZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="test1.SunFlowerSunProducerTest" />
+      <option name="METHOD_NAME" value="SunFlowerSunProducerCreateSunViewTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -351,6 +412,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SunFlowerSunProducerTest.SunFlowerSunProducerCreateSunViewTest" />
         <item itemvalue="Application.GameWindow" />
       </list>
     </recent_temporary>
