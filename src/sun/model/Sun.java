@@ -17,37 +17,33 @@ public class Sun {
     }
 
     public void move() {
-        if (getyPosition() < getEndYPosition()) {
-            setyPosition(getyPosition() + 4);
+        if (getYPosition() < getEndYPosition()) {
+            setyPosition(getYPosition() + 4);
         }
         else{
             setDestructTime(getDestructTime() - 1);
         }
     }
     public int getXPosition(){
-        return getxPosition();
+        return xPosition;
     }
-    public int getyPosition(){
+    public int getYPosition(){
         return yPosition;
     }
+    public int getEndYPosition() {
+        return endYPosition;
+    }
+
 
     public int getDestructTime() {
         return destructTime;
     }
-
     public void setDestructTime(int destructTime) {
         this.destructTime = destructTime;
-    }
-
-    public int getxPosition() {
-        return xPosition;
     }
 
     public void setyPosition(int yPosition) {
         this.yPosition = yPosition;
     }
 
-    public int getEndYPosition() {
-        return endYPosition;
-    }
 }
