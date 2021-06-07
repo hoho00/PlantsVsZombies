@@ -1,6 +1,5 @@
 package sun.presenter;
 
-import Game.view.GamePanel;
 import sun.model.Sun;
 import sun.view.SunView;
 
