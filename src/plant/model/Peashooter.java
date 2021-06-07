@@ -1,12 +1,11 @@
 package plant.model;
 
 import Lane.model.Lane;
-import Pea.model.NormalPea;
 import plant.strategy.ShootNormalPea;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
+
 
 /**
  * Created by Armin on 6/25/2016.
@@ -25,8 +24,8 @@ public class Peashooter extends Plant {
     }
     
     /**
-     * gamepanel�뿉�꽌 lane�쓣 遺덈윭�삤�뒗 寃껋씠 �븘�땶,
-     * lane class�뿉�꽌 �떛湲��넠�쑝濡� getInstance瑜� �븳�떎.
+     * gamepanel占쎈퓠占쎄퐣 lane占쎌뱽 �겫�뜄�쑎占쎌궎占쎈뮉 野껉퍔�뵠 占쎈툡占쎈빒,
+     * lane class占쎈퓠占쎄퐣 占쎈뼓疫뀐옙占쎈꽑占쎌몵嚥∽옙 getInstance�몴占� 占쎈립占쎈뼄.
      */
     public Peashooter(int x, int y) {
         super(x, y);

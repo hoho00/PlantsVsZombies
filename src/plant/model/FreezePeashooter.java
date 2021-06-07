@@ -1,17 +1,11 @@
 package plant.model;
 
 import Lane.model.Lane;
-
-import Pea.model.FreezePea;
 import plant.strategy.ShootFreezePea;
-import plant.strategy.ShootNormalPea;
-
 import javax.swing.*;
-
 import java.awt.Image;
-
 import java.awt.*;
-import java.awt.event.ActionEvent;
+
 
 /**
  * Created by Armin on 6/25/2016.

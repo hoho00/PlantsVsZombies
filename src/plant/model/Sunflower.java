@@ -1,6 +1,5 @@
 package plant.model;
 
-import plant.strategy.ProduceSunBySunFlower;
 import sun.producer.SunFlowerSunProducer;
 import sun.producer.SunProducer;
 

@@ -1,8 +1,7 @@
 package Game.view;
 
 import plantCard.model.PlantCard;
-import sun.producer.RandomSunProducer;
-import sun.producer.SunProducer;
+//import sun.producer.RandomSunProducer;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -17,7 +16,6 @@ public class GameWindow extends JFrame {
   
   private GamePanel gamePanel;
   static public GameWindow gameWindow;
-  private static SunProducer sunProducer;
   private static MenuFrame menuFrame;
   PlantType activePlantingBrush = PlantType.None;
 

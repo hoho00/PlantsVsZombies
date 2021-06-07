@@ -1,7 +1,6 @@
 package plant.model;
 
 import java.awt.Image;
-import Game.view.GamePanel;
 import Lane.model.Lane;
 import plant.strategy.PlantShootingStrategy;
 

@@ -1,6 +1,7 @@
 package Game.view;
 
-import Game.view.GameWindow;
+
+
 
 import javax.swing.*;
 import java.awt.*;

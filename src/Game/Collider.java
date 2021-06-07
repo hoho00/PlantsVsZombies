@@ -1,7 +1,6 @@
 package Game;
 
 import plant.model.Plant;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,14 +27,14 @@ public class Collider extends JPanel implements MouseListener {
         return assignedPlant;
     }
     /**
-     * �썝�옒 肄붾뱶
+     * 占쎌뜚占쎌삋 �굜遺얜굡
      * public Plant assignedPlant;
      *
-     * 諛붾�� 肄붾뱶
+     * 獄쏅뗀占쏙옙 �굜遺얜굡
      * private Plant assignedPlant;
      *
-     * private �쑝濡� 怨좎튂怨� getter setter 留뚮뱾�뼱 以섏빞 �븳�떎.
-     * 臾몄젣�젏 : collider.assignedPlant瑜� �벐�뒗 �겢�옒�뒪(GamePanel.java, Zombie.java)�뿉�꽌 getter濡� 諛붽퓭 以섏빞 �븳�떎.
+     * private 占쎌몵嚥∽옙 �⑥쥙�뒄�⑨옙 getter setter 筌띾슢諭억옙堉� 餓μ꼷鍮� 占쎈립占쎈뼄.
+     * �눧紐꾩젫占쎌젎 : collider.assignedPlant�몴占� 占쎈쾺占쎈뮉 占쎄깻占쎌삋占쎈뮞(GamePanel.java, Zombie.java)占쎈퓠占쎄퐣 getter嚥∽옙 獄쏅떽�벊 餓μ꼷鍮� 占쎈립占쎈뼄.
      */
     //turn public into private and make getter and setter
 
