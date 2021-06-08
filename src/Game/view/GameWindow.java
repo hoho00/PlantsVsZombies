@@ -1,8 +1,6 @@
 package Game.view;
 
 import plantCard.model.PlantCard;
-import sun.producer.RandomSunProducer;
-import sun.producer.SunProducer;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
