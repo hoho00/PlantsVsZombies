@@ -169,7 +169,7 @@
       <recent name="C:\Users\Armin\IdeaProjects\jPvZ\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlantFactoryTest.getPlantTest">
+  <component name="RunManager" selected="Application.GameWindow">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -484,9 +484,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameWindow" />
         <item itemvalue="JUnit.PlantFactoryTest.getPlantTest" />
         <item itemvalue="JUnit.PlantFactoryTest.testGetPlantSunflower" />
-        <item itemvalue="Application.GameWindow" />
         <item itemvalue="JUnit.SunFlowerSunProducerTest.SunFlowerSunProducerCreateSunViewTest" />
       </list>
     </recent_temporary>
