@@ -1,4 +1,4 @@
-package Test3;
+package test.Test3;
 
 import Game.view.GamePanel;
 import Pea.model.FreezePea;
