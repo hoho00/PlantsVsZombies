@@ -19,68 +19,23 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:plantRefactoring" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make test package">
-      <change afterPath="$PROJECT_DIR$/test/Test2/PlantTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Test5/GameWindowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Test5/SunPresenterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Test5/SunTest.java" afterDir="false" />
+    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make test package out of src dir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPvZ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jPvZ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Test3/PeaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/MeleeZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/MeleeZombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/view/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/view/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/view/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/view/MenuFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test3/PeaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test3/PeaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sun/model/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/model/Sun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sun/presenter/SunPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/presenter/SunPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test2/PlantTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test3/PeaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test3/PeaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plant/model/FreezePeashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/FreezePeashooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plant/model/Peashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Peashooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plant/model/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plant/model/Sunflower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Sunflower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test2/PlantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test2/PlantTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +96,7 @@
       <recent name="C:\Users\Armin\IdeaProjects\jPvZ\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GameWindow">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -323,6 +278,40 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="PlantTest.createSunFromSunflowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jPvZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
+      <option name="METHOD_NAME" value="createSunFromSunflowerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantTest.createSunflowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jPvZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
+      <option name="METHOD_NAME" value="createSunflowerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -406,6 +395,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameWindow" />
+        <item itemvalue="JUnit.PlantTest.createSunFromSunflowerTest" />
+        <item itemvalue="JUnit.PlantTest.createSunflowerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +429,7 @@
       <workItem from="1621934719641" duration="804000" />
       <workItem from="1622108743782" duration="279000" />
       <workItem from="1622122331617" duration="1213000" />
-      <workItem from="1623232619487" duration="1299000" />
+      <workItem from="1623232619487" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted code">
       <created>1545395229844</created>
@@ -478,7 +469,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="plantRefactoring" />
                       </list>
                     </value>
                   </entry>
@@ -503,29 +494,38 @@
     <MESSAGE value="Reformatted code" />
     <MESSAGE value="make Plant Test Class" />
     <MESSAGE value="make test package" />
-    <option name="LAST_COMMIT_MESSAGE" value="make test package" />
+    <MESSAGE value="make test package out of src dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="make test package out of src dir" />
   </component>
   <component name="WindowStateProjectService">
     <state x="290" y="143" key="#Project_Structure" timestamp="1623234231652">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state x="290" y="143" key="#Project_Structure/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234231652" />
-    <state width="877" height="197" key="GridCell.Tab.0.bottom" timestamp="1623234092157">
+    <state x="343" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1623237829384">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="197" key="GridCell.Tab.0.bottom/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
-    <state width="877" height="197" key="GridCell.Tab.0.center" timestamp="1623234092157">
+    <state x="343" y="245" key="#com.intellij.ide.util.MemberChooser/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623237829384" />
+    <state x="170" y="92" width="737" height="896" maximized="true" key="DiffContextDialog" timestamp="1623234546706">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="197" key="GridCell.Tab.0.center/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
-    <state width="877" height="197" key="GridCell.Tab.0.left" timestamp="1623234092157">
+    <state x="170" y="92" width="737" height="896" maximized="true" key="DiffContextDialog/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234546706" />
+    <state width="877" height="301" key="GridCell.Tab.0.bottom" timestamp="1623238706004">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="197" key="GridCell.Tab.0.left/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
-    <state width="877" height="197" key="GridCell.Tab.0.right" timestamp="1623234092157">
+    <state width="877" height="301" key="GridCell.Tab.0.bottom/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
+    <state width="877" height="301" key="GridCell.Tab.0.center" timestamp="1623238706004">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="197" key="GridCell.Tab.0.right/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
+    <state width="877" height="301" key="GridCell.Tab.0.center/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
+    <state width="877" height="301" key="GridCell.Tab.0.left" timestamp="1623238706004">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="301" key="GridCell.Tab.0.left/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
+    <state width="877" height="301" key="GridCell.Tab.0.right" timestamp="1623238706004">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="301" key="GridCell.Tab.0.right/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
     <state x="218" y="69" key="MergeDialog" timestamp="1623052051710">
       <screen x="78" y="0" width="1458" height="864" />
     </state>

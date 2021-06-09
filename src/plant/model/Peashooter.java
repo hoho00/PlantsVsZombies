@@ -2,6 +2,7 @@ package plant.model;
 
 import Lane.model.Lane;
 import plant.strategy.ShootNormalPea;
+import sun.producer.SunProducer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -50,6 +51,7 @@ public class Peashooter extends Plant {
     public void stop() {
         shootTimer.stop();
     }
+
 
     @Override
     public void shoot() {

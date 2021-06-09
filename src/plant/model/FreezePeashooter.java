@@ -2,6 +2,8 @@ package plant.model;
 
 import Lane.model.Lane;
 import plant.strategy.ShootFreezePea;
+import sun.producer.SunProducer;
+
 import javax.swing.*;
 import java.awt.Image;
 import java.awt.*;
@@ -45,6 +47,7 @@ public class FreezePeashooter extends Plant {
     public void stop() {
         shootTimer.stop();
     }
+
 
     @Override
     public void shoot() {
