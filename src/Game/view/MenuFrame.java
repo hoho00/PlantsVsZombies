@@ -3,7 +3,7 @@ package Game.view;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
-class MenuFrame extends JFrame {
+public class MenuFrame extends JFrame {
   boolean isMenuFrame = true;
   public MenuFrame() {
     Menu menu = new Menu();
