@@ -216,7 +216,7 @@ public class GamePanel extends JLayeredPane {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(backgroundImage, 0, 0, null);
-x        for (int i = 0; i < 45; i++) {
+       for (int i = 0; i < 45; i++) {
             Collider collider = colliders[i];
             Plant plant = collider.getPlant();
             if (plant != null) {
