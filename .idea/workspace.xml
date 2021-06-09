@@ -25,17 +25,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make test package out of src dir">
+    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make Test Cases for sunflower">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/view/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plant/model/FreezePeashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/FreezePeashooter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plant/model/Peashooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Peashooter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plant/model/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plant/model/Sunflower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/model/Sunflower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plant/strategy/ShootNormalPea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/plant/strategy/ShootNormalPea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Test2/PlantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test2/PlantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test3/PeaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test3/PeaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +249,13 @@
     <configuration name="GameWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game.view.GameWindow" />
       <module name="jPvZ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Game.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,24 +288,24 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="PlantTest.createSunFromSunflowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PeaTest.testPeaAttackZombie300" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jPvZ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test2.*" />
+          <option name="PATTERN" value="Test3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Test2" />
-      <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
-      <option name="METHOD_NAME" value="createSunFromSunflowerTest" />
+      <option name="PACKAGE_NAME" value="Test3" />
+      <option name="MAIN_CLASS_NAME" value="Test3.PeaTest" />
+      <option name="METHOD_NAME" value="testPeaAttackZombie300" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlantTest.createSunflowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlantTest.checkIfStrategyPatternApplyOnFreezePeashooterClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jPvZ" />
       <extension name="coverage">
         <pattern>
@@ -305,7 +315,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test2" />
       <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
-      <option name="METHOD_NAME" value="createSunflowerTest" />
+      <option name="METHOD_NAME" value="checkIfStrategyPatternApplyOnFreezePeashooterClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantTest.checkIfStrategyPatternApplyOnPeashooterClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jPvZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
+      <option name="METHOD_NAME" value="checkIfStrategyPatternApplyOnPeashooterClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlantTest.shootNormalPeaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jPvZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2.PlantTest" />
+      <option name="METHOD_NAME" value="shootNormalPeaTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -395,8 +439,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameWindow" />
-        <item itemvalue="JUnit.PlantTest.createSunFromSunflowerTest" />
-        <item itemvalue="JUnit.PlantTest.createSunflowerTest" />
+        <item itemvalue="JUnit.PlantTest.shootNormalPeaTest" />
+        <item itemvalue="JUnit.PeaTest.testPeaAttackZombie300" />
+        <item itemvalue="JUnit.PlantTest.checkIfStrategyPatternApplyOnFreezePeashooterClass" />
+        <item itemvalue="JUnit.PlantTest.checkIfStrategyPatternApplyOnPeashooterClass" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +475,7 @@
       <workItem from="1621934719641" duration="804000" />
       <workItem from="1622108743782" duration="279000" />
       <workItem from="1622122331617" duration="1213000" />
-      <workItem from="1623232619487" duration="5820000" />
+      <workItem from="1623232619487" duration="19351000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted code">
       <created>1545395229844</created>
@@ -452,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623233671946</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="make Test Cases for sunflower">
+      <created>1623238823884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623238823884</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,13 +548,18 @@
     <MESSAGE value="make Plant Test Class" />
     <MESSAGE value="make test package" />
     <MESSAGE value="make test package out of src dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="make test package out of src dir" />
+    <MESSAGE value="make Test Cases for sunflower" />
+    <option name="LAST_COMMIT_MESSAGE" value="make Test Cases for sunflower" />
   </component>
   <component name="WindowStateProjectService">
     <state x="290" y="143" key="#Project_Structure" timestamp="1623234231652">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state x="290" y="143" key="#Project_Structure/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234231652" />
+    <state x="170" y="92" width="737" height="896" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1623242896236">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="170" y="92" width="737" height="896" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623242896236" />
     <state x="343" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1623237829384">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
@@ -510,22 +568,22 @@
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state x="170" y="92" width="737" height="896" maximized="true" key="DiffContextDialog/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234546706" />
-    <state width="877" height="301" key="GridCell.Tab.0.bottom" timestamp="1623238706004">
+    <state width="877" height="181" key="GridCell.Tab.0.bottom" timestamp="1623252201854">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="301" key="GridCell.Tab.0.bottom/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
-    <state width="877" height="301" key="GridCell.Tab.0.center" timestamp="1623238706004">
+    <state width="877" height="181" key="GridCell.Tab.0.bottom/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623252201854" />
+    <state width="877" height="181" key="GridCell.Tab.0.center" timestamp="1623252201853">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="301" key="GridCell.Tab.0.center/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
-    <state width="877" height="301" key="GridCell.Tab.0.left" timestamp="1623238706004">
+    <state width="877" height="181" key="GridCell.Tab.0.center/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623252201853" />
+    <state width="877" height="181" key="GridCell.Tab.0.left" timestamp="1623252201853">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="301" key="GridCell.Tab.0.left/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
-    <state width="877" height="301" key="GridCell.Tab.0.right" timestamp="1623238706004">
+    <state width="877" height="181" key="GridCell.Tab.0.left/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623252201853" />
+    <state width="877" height="181" key="GridCell.Tab.0.right" timestamp="1623252201854">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="877" height="301" key="GridCell.Tab.0.right/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238706004" />
+    <state width="877" height="181" key="GridCell.Tab.0.right/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623252201854" />
     <state x="218" y="69" key="MergeDialog" timestamp="1623052051710">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
@@ -539,10 +597,10 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="377" y="152" key="RollbackChangesDialog/78.0.1458.864@78.0.1458.864" timestamp="1623051750140" />
-    <state x="485" y="206" key="Vcs.Push.Dialog.v2" timestamp="1623233684544">
+    <state x="485" y="206" key="Vcs.Push.Dialog.v2" timestamp="1623238830771">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state x="485" y="206" key="Vcs.Push.Dialog.v2/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623233684544" />
+    <state x="485" y="206" key="Vcs.Push.Dialog.v2/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623238830771" />
     <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1623052083733" />
     <state x="527" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623051760374">
       <screen x="78" y="0" width="1458" height="864" />
@@ -558,5 +616,9 @@
     </state>
     <state x="992" y="0" width="935" height="1087" key="dock-window-1/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234193766" />
     <state x="801" y="0" width="742" height="870" key="dock-window-1/78.0.1458.864@78.0.1458.864" timestamp="1623052178487" />
+    <state x="1122" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1623245330538">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="1122" y="240" width="672" height="678" key="search.everywhere.popup/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623245330538" />
   </component>
 </project>

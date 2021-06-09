@@ -13,15 +13,15 @@ import java.awt.*;
  */
 public class Peashooter extends Plant {
 
-    private static final int Peashooter_Price = 100;
-    public Image peashooterImage;
-    public Timer shootTimer;
-    private Lane lanes;
-    
+        private static final int Peashooter_Price = 100;
+        public Image peashooterImage;
+        public Timer shootTimer;
+        private Lane lanes;
 
-    @Override
-    protected void setImage() {
-      plantImage = new ImageIcon(this.getClass().getResource("../../images/plants/peashooter.gif")).getImage();
+
+        @Override
+        protected void setImage() {
+            plantImage = new ImageIcon(this.getClass().getResource("../../images/plants/peashooter.gif")).getImage();
     }
     
     /**
@@ -33,6 +33,7 @@ public class Peashooter extends Plant {
         peashooterImage = new ImageIcon(this.getClass().getResource("../../images/plants/peashooter.gif")).getImage();
         lanes = lanes.getInstance();
         this.setPlantShootingStrategy(new ShootNormalPea());
+        System.out.print("location : " + getX() + "," +getY());
         shoot();
     }
     
@@ -50,11 +51,5 @@ public class Peashooter extends Plant {
     @Override
     public void stop() {
         shootTimer.stop();
-    }
-
-
-    @Override
-    public void shoot() {
-        super.shoot();
     }
 }

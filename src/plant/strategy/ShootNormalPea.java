@@ -12,6 +12,7 @@ public class ShootNormalPea implements PlantShootingStrategy {
     public static final int START_BASE_POSITION = 103;
     public static final int START_XPOSITION = 103;
 
+
     @Override
     public void shoot(int x, int y, Lane lanes) {
         shootNormalPea(x, y, lanes);
@@ -21,9 +22,11 @@ public class ShootNormalPea implements PlantShootingStrategy {
         lanes = lanes.getInstance();
         Lane finalLanes = lanes;
         shootTimer = new Timer(SHOOTING_DELAY, (ActionEvent e) -> {
-            //System.out.println("SHOOT");
+
+
             boolean isZombieOnIt = finalLanes.getLaneZombies().get(yPosition).size() > 0;
             if (isZombieOnIt) {
+                System.out.println("SHOOT");
                 finalLanes.getLanePeas().get(yPosition).add(new NormalPea(yPosition, START_BASE_POSITION + xPosition * START_XPOSITION));
             }
         });

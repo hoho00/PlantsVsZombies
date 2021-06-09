@@ -44,7 +44,9 @@ public abstract class Plant {
     public void setPlantShootingStrategy(PlantShootingStrategy plantShootingStrategy) {
         this.plantShootingStrategy = plantShootingStrategy;
     }
-
+    public PlantShootingStrategy getPlantShootingStrategy() {
+        return this.plantShootingStrategy;
+    }
     public void stop() {
     }
 

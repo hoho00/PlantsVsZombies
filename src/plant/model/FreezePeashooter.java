@@ -53,5 +53,4 @@ public class FreezePeashooter extends Plant {
     public void shoot() {
         super.shoot();
     }
-
 }
