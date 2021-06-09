@@ -40,4 +40,19 @@ public class PlantFactoryTest {
         Assert.assertTrue(peashooter instanceof Peashooter);
         Assert.assertTrue(freezePeashooter instanceof FreezePeashooter);
     }
+
+    /**
+     * Purpose : Test PlantFactory Create plant in right Position
+     * Input : getPlant(plantType) , return Plant in right Position
+     * Expected :
+     *  plant.getX() : 0
+     *  plant.getY() : 0
+     */
+    @Test
+    public void getPlantPositionTest(){
+        Plant plant = plantFactory.getPlant(GameWindow.PlantType.Sunflower,0,0);
+
+        Assert.assertEquals(plant.getX(), 0);
+        Assert.assertEquals(plant.getY(), 0);
+    }
 }
