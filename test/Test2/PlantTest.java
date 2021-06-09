@@ -1,4 +1,4 @@
-package test.Test2;
+package Test2;
 
 import Game.view.GamePanel;
 import org.junit.After;

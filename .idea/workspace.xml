@@ -26,9 +26,61 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make Plant Test Class">
+    <list default="true" id="7dc5d397-09b3-4108-83f3-9a4e2501e054" name="Default" comment="make test package">
+      <change afterPath="$PROJECT_DIR$/test/Test2/PlantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Test5/GameWindowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Test5/SunPresenterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Test5/SunTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test2/PlantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test2/PlantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPvZ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jPvZ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/Collider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/LevelData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel$PlantActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow$PlantType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Game/view/MenuFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Lane/model/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/FreezePea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/NormalPea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/Pea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/Pea/model/PeaStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/Test3/PeaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/creator/PlantFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/FreezePeashooter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Peashooter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Plant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/model/Sunflower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantProduceSunStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/PlantShootingStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ProduceSunBySunFlower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootFreezePea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plant/strategy/ShootNormalPea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/plantCard/model/PlantCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/model/Sun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/presenter/SunPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/RandomSunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunFlowerSunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/producer/SunProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/sun/view/SunView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/ConeHeadZombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/MeleeZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/MeleeZombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/NormalZombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/model/Zombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jPvZ/zombie/producer/ZombieProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/view/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/view/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/view/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/view/MenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test3/PeaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test3/PeaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/model/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/model/Sun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/presenter/SunPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/presenter/SunPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/RandomSunProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sun/producer/SunFlowerSunProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test2/PlantTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test3/PeaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test3/PeaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +124,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -386,7 +438,7 @@
       <workItem from="1621934719641" duration="804000" />
       <workItem from="1622108743782" duration="279000" />
       <workItem from="1622122331617" duration="1213000" />
-      <workItem from="1623232619487" duration="653000" />
+      <workItem from="1623232619487" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted code">
       <created>1545395229844</created>
@@ -402,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623051929534</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="make test package">
+      <created>1623233671946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623233671946</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,37 +502,61 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reformatted code" />
     <MESSAGE value="make Plant Test Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="make Plant Test Class" />
+    <MESSAGE value="make test package" />
+    <option name="LAST_COMMIT_MESSAGE" value="make test package" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="290" y="143" key="#Project_Structure" timestamp="1623234231652">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="290" y="143" key="#Project_Structure/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234231652" />
+    <state width="877" height="197" key="GridCell.Tab.0.bottom" timestamp="1623234092157">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="197" key="GridCell.Tab.0.bottom/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
+    <state width="877" height="197" key="GridCell.Tab.0.center" timestamp="1623234092157">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="197" key="GridCell.Tab.0.center/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
+    <state width="877" height="197" key="GridCell.Tab.0.left" timestamp="1623234092157">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="197" key="GridCell.Tab.0.left/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
+    <state width="877" height="197" key="GridCell.Tab.0.right" timestamp="1623234092157">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state width="877" height="197" key="GridCell.Tab.0.right/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234092157" />
     <state x="218" y="69" key="MergeDialog" timestamp="1623052051710">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="218" y="69" key="MergeDialog/78.0.1458.864@78.0.1458.864" timestamp="1623052051710" />
-    <state x="445" y="193" key="MultipleFileMergeDialog" timestamp="1623052062423">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state x="542" y="241" key="MultipleFileMergeDialog" timestamp="1623233790257">
+      <screen x="78" y="0" width="1842" height="1080" />
     </state>
+    <state x="542" y="241" key="MultipleFileMergeDialog/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623233790257" />
     <state x="445" y="193" key="MultipleFileMergeDialog/78.0.1458.864@78.0.1458.864" timestamp="1623052062423" />
     <state x="377" y="152" key="RollbackChangesDialog" timestamp="1623051750140">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="377" y="152" key="RollbackChangesDialog/78.0.1458.864@78.0.1458.864" timestamp="1623051750140" />
-    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1623052083733">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state x="485" y="206" key="Vcs.Push.Dialog.v2" timestamp="1623233684544">
+      <screen x="78" y="0" width="1842" height="1080" />
     </state>
+    <state x="485" y="206" key="Vcs.Push.Dialog.v2/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623233684544" />
     <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1623052083733" />
     <state x="527" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623051760374">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="527" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/78.0.1458.864@78.0.1458.864" timestamp="1623051760374" />
-    <state x="620" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623052029525">
-      <screen x="78" y="0" width="1458" height="864" />
-    </state>
-    <state x="620" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/78.0.1458.864@78.0.1458.864" timestamp="1623052029525" />
-    <state x="991" y="0" width="938" height="1088" key="dock-window-1" timestamp="1623233580139">
+    <state x="763" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623233767628">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state x="991" y="0" width="938" height="1088" key="dock-window-1/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623233580139" />
+    <state x="763" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623233767628" />
+    <state x="620" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/78.0.1458.864@78.0.1458.864" timestamp="1623052029525" />
+    <state x="992" y="0" width="935" height="1087" key="dock-window-1" timestamp="1623234193766">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="992" y="0" width="935" height="1087" key="dock-window-1/-1858.0.1474.864/78.0.1842.1080@78.0.1842.1080" timestamp="1623234193766" />
     <state x="801" y="0" width="742" height="870" key="dock-window-1/78.0.1458.864@78.0.1458.864" timestamp="1623052178487" />
   </component>
 </project>
