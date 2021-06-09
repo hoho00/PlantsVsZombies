@@ -1,12 +1,9 @@
-package Test3;
+package test.Test3;
 
 import Game.view.GamePanel;
 import Pea.model.FreezePea;
 import Pea.model.NormalPea;
 import Pea.model.Pea;
-
-import javax.swing.*;
-import java.awt.*;
 
 import org.junit.After;
 import org.junit.Before;
