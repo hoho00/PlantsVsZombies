@@ -19,6 +19,13 @@ public class GameWindow extends JFrame {
   private static MenuFrame menuFrame;
   PlantType activePlantingBrush = PlantType.None;
 
+  public MenuFrame getMenuFrame() {
+    return menuFrame;
+  }
+  
+  public static void setMenuFrame(MenuFrame MENUFRAME) {
+    menuFrame = MENUFRAME;
+  }
   
   public GameWindow() {
     setSize(1012, 785);
@@ -30,7 +37,7 @@ public class GameWindow extends JFrame {
   }
 
 
-  private void AttachCard(GamePanel gamepanel, int xCoordinate, String imagePath, PlantType plantType) {
+  public void AttachCard(GamePanel gamepanel, int xCoordinate, String imagePath, PlantType plantType) {
 
     PlantCard newCard =
         new PlantCard(new ImageIcon(this.getClass().getResource(imagePath)).getImage());
@@ -39,6 +46,7 @@ public class GameWindow extends JFrame {
       gamepanel.setActivePlantingBrush(plantType);
     });
     getLayeredPane().add(newCard, new Integer(3));
+    
   }
 
   
@@ -60,7 +68,7 @@ public class GameWindow extends JFrame {
 }
 
 public static void main(String[] args) {
-    menuFrame = new MenuFrame();
+  setMenuFrame(new MenuFrame());
   }
 
   

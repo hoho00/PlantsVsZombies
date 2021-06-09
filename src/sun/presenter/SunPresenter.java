@@ -1,5 +1,4 @@
 package sun.presenter;
-
 import sun.model.Sun;
 import sun.view.SunView;
 
@@ -16,7 +15,14 @@ public class SunPresenter {
         this.sun = sun;
         moveTimer = new Timer(60,(ActionEvent e) -> move());
     }
-
+    //For Test
+    public Timer getTimer() {
+      return moveTimer;
+    }
+    //For Test
+    public Sun getSun() {
+      return sun;
+    }
     public void mouseReleased() {
         sunView.remove();
     }
@@ -32,10 +38,11 @@ public class SunPresenter {
         setSunViewLocation();
         if(sun.getDestructTime() <= 0){
             sunView.remove();
+            
         }
     }
 
     public void setSunViewLocation() {
-        sunView.setLocation(sun.getXPosition(), sun.getyPosition());
+        sunView.setLocation(sun.getXPosition(), sun.getYPosition());
     }
 }
